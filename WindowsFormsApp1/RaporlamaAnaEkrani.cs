@@ -28,5 +28,12 @@ namespace WindowsFormsApp1
             form1.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TopluMusteriBorcRaporuEkrani topluMusteriBorcRaporuEkrani = new TopluMusteriBorcRaporuEkrani();
+            topluMusteriBorcRaporuEkrani.Show();
+            this.Hide();
+        }
     }
 }
