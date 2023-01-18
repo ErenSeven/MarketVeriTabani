@@ -35,5 +35,12 @@ namespace WindowsFormsApp1
             topluMusteriBorcRaporuEkrani.Show();
             this.Hide();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            SaticiKarZararRaporuEkrani saticiKarZararRaporuEkrani = new SaticiKarZararRaporuEkrani();
+            saticiKarZararRaporuEkrani.Show();
+            this.Hide();
+        }
     }
 }

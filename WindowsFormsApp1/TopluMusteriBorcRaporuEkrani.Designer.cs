@@ -106,6 +106,7 @@
             this.Name = "TopluMusteriBorcRaporuEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TopluMusteriBorcRaporuEkrani";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 

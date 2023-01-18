@@ -72,6 +72,12 @@
     <Compile Include="RaporlamaAnaEkrani.Designer.cs">
       <DependentUpon>RaporlamaAnaEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="SaticiKarZararRaporuEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaticiKarZararRaporuEkrani.Designer.cs">
+      <DependentUpon>SaticiKarZararRaporuEkrani.cs</DependentUpon>
+    </Compile>
     <Compile Include="SatisEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </Compile>
     <EmbeddedResource Include="RaporlamaAnaEkrani.resx">
       <DependentUpon>RaporlamaAnaEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaticiKarZararRaporuEkrani.resx">
+      <DependentUpon>SaticiKarZararRaporuEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SatisEkrani.resx">
       <DependentUpon>SatisEkrani.cs</DependentUpon>

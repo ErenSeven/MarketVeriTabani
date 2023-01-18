@@ -71,6 +71,7 @@
             this.button6.TabIndex = 67;
             this.button6.Text = "Satıcı Kar/Zarar Raporu";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button3
             // 
