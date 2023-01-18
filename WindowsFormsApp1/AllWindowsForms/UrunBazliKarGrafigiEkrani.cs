@@ -8,25 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace WindowsFormsApp1.AllWindowsForms
 {
-    public partial class MusteriEklemeEkrani : Form
+    public partial class UrunBazliKarGrafigiEkrani : Form
     {
-        public MusteriEklemeEkrani()
+        public UrunBazliKarGrafigiEkrani()
         {
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace WindowsFormsApp1.AllWindowsForms
 {
-    public partial class MusteriEklemeEkrani : Form
+    public partial class MusteriBorcuOdemeEkrani : Form
     {
-        public MusteriEklemeEkrani()
+        public MusteriBorcuOdemeEkrani()
         {
             InitializeComponent();
         }
@@ -22,11 +22,6 @@ namespace WindowsFormsApp1
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

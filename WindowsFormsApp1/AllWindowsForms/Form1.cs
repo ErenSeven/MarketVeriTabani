@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using WindowsFormsApp1.AllWindowsForms;
 
 namespace WindowsFormsApp1
 {
@@ -42,6 +43,20 @@ namespace WindowsFormsApp1
         {
             RaporlamaAnaEkrani raporlamaAnaEkrani = new RaporlamaAnaEkrani();
             raporlamaAnaEkrani.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SaticiBorcuOdemeEkrani saticiBorcuOdemeEkrani = new SaticiBorcuOdemeEkrani();
+            saticiBorcuOdemeEkrani.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MusteriBorcuOdemeEkrani musteriBorcuOdemeEkrani = new MusteriBorcuOdemeEkrani();
+            musteriBorcuOdemeEkrani.Show();
             this.Hide();
         }
     }

@@ -45,9 +45,10 @@
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(47, 20);
+            this.button3.Location = new System.Drawing.Point(63, 25);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(123, 43);
+            this.button3.Size = new System.Drawing.Size(164, 53);
             this.button3.TabIndex = 45;
             this.button3.Text = "Geri Dön";
             this.button3.UseVisualStyleBackColor = true;
@@ -57,68 +58,77 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(85, 86);
+            this.label6.Location = new System.Drawing.Point(113, 106);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(144, 24);
+            this.label6.Size = new System.Drawing.Size(179, 30);
             this.label6.TabIndex = 44;
             this.label6.Text = "Müşteri Listesi";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(89, 126);
+            this.dataGridView1.Location = new System.Drawing.Point(119, 155);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(561, 530);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(748, 652);
             this.dataGridView1.TabIndex = 43;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(928, 322);
+            this.textBox5.Location = new System.Drawing.Point(1237, 396);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(79, 20);
+            this.textBox5.Size = new System.Drawing.Size(104, 22);
             this.textBox5.TabIndex = 42;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(759, 322);
+            this.label5.Location = new System.Drawing.Point(1012, 396);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(144, 24);
+            this.label5.Size = new System.Drawing.Size(181, 30);
             this.label5.TabIndex = 41;
             this.label5.Text = "Müşteri Soyadı";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(928, 359);
+            this.textBox4.Location = new System.Drawing.Point(1237, 442);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(79, 20);
+            this.textBox4.Size = new System.Drawing.Size(104, 22);
             this.textBox4.TabIndex = 40;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(738, 357);
+            this.label4.Location = new System.Drawing.Point(984, 439);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(171, 24);
+            this.label4.Size = new System.Drawing.Size(213, 30);
             this.label4.TabIndex = 39;
             this.label4.Text = "Müşteri Numarası";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(928, 287);
+            this.textBox3.Location = new System.Drawing.Point(1237, 353);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(79, 20);
+            this.textBox3.Size = new System.Drawing.Size(104, 22);
             this.textBox3.TabIndex = 38;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(790, 287);
+            this.label2.Location = new System.Drawing.Point(1053, 353);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 24);
+            this.label2.Size = new System.Drawing.Size(141, 30);
             this.label2.TabIndex = 37;
             this.label2.Text = "Müşteri Adı";
             // 
@@ -126,19 +136,21 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(821, 401);
+            this.button1.Location = new System.Drawing.Point(1095, 494);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 41);
+            this.button1.Size = new System.Drawing.Size(248, 50);
             this.button1.TabIndex = 34;
             this.button1.Text = "Müşteri Ekle";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MusteriEklemeEkrani
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(75)))), ((int)(((byte)(109)))));
-            this.ClientSize = new System.Drawing.Size(1062, 676);
+            this.ClientSize = new System.Drawing.Size(1416, 832);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView1);
@@ -149,6 +161,7 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MusteriEklemeEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MusteriEklemeEkrani";

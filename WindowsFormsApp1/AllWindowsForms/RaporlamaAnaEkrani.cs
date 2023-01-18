@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.AllWindowsForms;
 
 namespace WindowsFormsApp1
 {
@@ -40,6 +41,34 @@ namespace WindowsFormsApp1
         {
             SaticiKarZararRaporuEkrani saticiKarZararRaporuEkrani = new SaticiKarZararRaporuEkrani();
             saticiKarZararRaporuEkrani.Show();
+            this.Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            UrunBazliKarRaporuEkrani urunBazliKarRaporuEkrani = new UrunBazliKarRaporuEkrani();
+            urunBazliKarRaporuEkrani.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            UrunBazliKarGrafigiEkrani urunBazliKarGrafigiEkrani = new UrunBazliKarGrafigiEkrani();
+            urunBazliKarGrafigiEkrani.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MusteriBazliRaporEkrani musteriBazliRaporEkrani = new MusteriBazliRaporEkrani();
+            musteriBazliRaporEkrani.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SatisTrendiEkrani satisTrendiEkrani = new SatisTrendiEkrani();
+            satisTrendiEkrani.Show();
             this.Hide();
         }
     }
