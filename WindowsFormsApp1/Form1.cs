@@ -23,5 +23,12 @@ namespace WindowsFormsApp1
             urunEklemeEkrani.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            StogaEklemeEkrani stogaEklemeEkrani = new StogaEklemeEkrani();
+            stogaEklemeEkrani.Show();
+            this.Hide();
+        }
     }
 }
