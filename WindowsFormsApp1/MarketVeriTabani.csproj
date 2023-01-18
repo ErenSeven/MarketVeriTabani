@@ -76,6 +76,12 @@
     <Compile Include="AllWindowsForms\SaticiBorcuOdemeEkrani.Designer.cs">
       <DependentUpon>SaticiBorcuOdemeEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllWindowsForms\UrunBazliKarGrafigiEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindowsForms\UrunBazliKarGrafigiEkrani.Designer.cs">
+      <DependentUpon>UrunBazliKarGrafigiEkrani.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllWindowsForms\UrunBazliKarRaporuEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllWindowsForms\SaticiBorcuOdemeEkrani.resx">
       <DependentUpon>SaticiBorcuOdemeEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllWindowsForms\UrunBazliKarGrafigiEkrani.resx">
+      <DependentUpon>UrunBazliKarGrafigiEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllWindowsForms\UrunBazliKarRaporuEkrani.resx">
       <DependentUpon>UrunBazliKarRaporuEkrani.cs</DependentUpon>
