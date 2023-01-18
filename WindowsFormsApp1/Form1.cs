@@ -37,5 +37,12 @@ namespace WindowsFormsApp1
             musteriEklemeEkrani.Show();
             this.Hide();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            RaporlamaAnaEkrani raporlamaAnaEkrani = new RaporlamaAnaEkrani();
+            raporlamaAnaEkrani.Show();
+            this.Hide();
+        }
     }
 }
