@@ -30,5 +30,12 @@ namespace WindowsFormsApp1
             stogaEklemeEkrani.Show();
             this.Hide();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            MusteriEklemeEkrani musteriEklemeEkrani = new MusteriEklemeEkrani();
+            musteriEklemeEkrani.Show();
+            this.Hide();
+        }
     }
 }
