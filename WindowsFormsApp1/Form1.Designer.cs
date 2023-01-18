@@ -199,6 +199,7 @@
             this.button7.TabIndex = 54;
             this.button7.Text = "Ürün Ekle";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Form1
             // 

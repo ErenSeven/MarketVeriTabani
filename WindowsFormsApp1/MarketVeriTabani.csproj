@@ -72,6 +72,12 @@
     <Compile Include="PesinSatisEkrani.Designer.cs">
       <DependentUpon>PesinSatisEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="UrunEklemeEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunEklemeEkrani.Designer.cs">
+      <DependentUpon>UrunEklemeEkrani.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CariSatisEkrani.resx">
       <DependentUpon>CariSatisEkrani.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PesinSatisEkrani.resx">
       <DependentUpon>PesinSatisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunEklemeEkrani.resx">
+      <DependentUpon>UrunEklemeEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

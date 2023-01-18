@@ -16,5 +16,12 @@ namespace WindowsFormsApp1
             satisEkrani.Show();
             this.Hide();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            UrunEklemeEkrani urunEklemeEkrani = new UrunEklemeEkrani();
+            urunEklemeEkrani.Show();
+            this.Hide();
+        }
     }
 }
