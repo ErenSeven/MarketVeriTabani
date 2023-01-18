@@ -50,9 +50,9 @@
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(60, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 24);
+            this.label1.Size = new System.Drawing.Size(90, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Müşteri Seç";
+            this.label1.Text = "Ürün Seç";
             // 
             // dataGridView1
             // 

@@ -23,5 +23,12 @@ namespace WindowsFormsApp1
             cariSatisEkrani.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PesinSatisEkrani pesinSatisEkrani = new PesinSatisEkrani();
+            pesinSatisEkrani.Show();
+            this.Hide();
+        }
     }
 }
