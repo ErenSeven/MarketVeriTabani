@@ -58,6 +58,12 @@
     <Compile Include="AllWindowsForms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllWindowsForms\MusteriBazliRaporEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindowsForms\MusteriBazliRaporEkrani.Designer.cs">
+      <DependentUpon>MusteriBazliRaporEkrani.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllWindowsForms\MusteriBorcuOdemeEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllWindowsForms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllWindowsForms\MusteriBazliRaporEkrani.resx">
+      <DependentUpon>MusteriBazliRaporEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllWindowsForms\MusteriBorcuOdemeEkrani.resx">
       <DependentUpon>MusteriBorcuOdemeEkrani.cs</DependentUpon>
