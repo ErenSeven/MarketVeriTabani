@@ -38,5 +38,10 @@ namespace WindowsFormsApp1.AllWindowsForms
         {
 
         }
+
+        private void SaticiBorcuOdemeEkrani_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

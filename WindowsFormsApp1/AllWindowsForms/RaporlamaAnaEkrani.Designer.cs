@@ -54,20 +54,23 @@
             // 
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button7.Location = new System.Drawing.Point(760, 183);
+            this.button7.Location = new System.Drawing.Point(1013, 225);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(200, 70);
+            this.button7.Size = new System.Drawing.Size(267, 86);
             this.button7.TabIndex = 68;
             this.button7.Text = "Ürün Bazlı Kar Zarar Raporu";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button6.Location = new System.Drawing.Point(456, 183);
+            this.button6.Location = new System.Drawing.Point(608, 225);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(200, 70);
+            this.button6.Size = new System.Drawing.Size(267, 86);
             this.button6.TabIndex = 67;
             this.button6.Text = "Satıcı Kar/Zarar Raporu";
             this.button6.UseVisualStyleBackColor = true;
@@ -77,19 +80,22 @@
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(760, 391);
+            this.button3.Location = new System.Drawing.Point(1013, 481);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 63);
+            this.button3.Size = new System.Drawing.Size(267, 78);
             this.button3.TabIndex = 64;
             this.button3.Text = "Ürün Bazlı Kar Grafiği";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(760, 259);
+            this.pictureBox6.Location = new System.Drawing.Point(1013, 319);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(200, 126);
+            this.pictureBox6.Size = new System.Drawing.Size(267, 155);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 63;
             this.pictureBox6.TabStop = false;
@@ -98,30 +104,35 @@
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(456, 391);
+            this.button2.Location = new System.Drawing.Point(608, 481);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 63);
+            this.button2.Size = new System.Drawing.Size(267, 78);
             this.button2.TabIndex = 62;
             this.button2.Text = "Müşteri Bazlı Rapor";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button4
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(116, 391);
+            this.button4.Location = new System.Drawing.Point(155, 481);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 63);
+            this.button4.Size = new System.Drawing.Size(267, 78);
             this.button4.TabIndex = 60;
             this.button4.Text = "Satış Trendi Raporu";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(116, 259);
+            this.pictureBox4.Location = new System.Drawing.Point(155, 319);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(200, 126);
+            this.pictureBox4.Size = new System.Drawing.Size(267, 155);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 59;
             this.pictureBox4.TabStop = false;
@@ -129,9 +140,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(456, 259);
+            this.pictureBox3.Location = new System.Drawing.Point(608, 319);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(200, 126);
+            this.pictureBox3.Size = new System.Drawing.Size(267, 155);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 58;
             this.pictureBox3.TabStop = false;
@@ -139,9 +151,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(760, 51);
+            this.pictureBox2.Location = new System.Drawing.Point(1013, 63);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 126);
+            this.pictureBox2.Size = new System.Drawing.Size(267, 155);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 57;
             this.pictureBox2.TabStop = false;
@@ -150,9 +163,10 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(116, 183);
+            this.button1.Location = new System.Drawing.Point(155, 225);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 70);
+            this.button1.Size = new System.Drawing.Size(267, 86);
             this.button1.TabIndex = 56;
             this.button1.Text = "Toplu Müşteri Borç Raporu";
             this.button1.UseVisualStyleBackColor = true;
@@ -161,9 +175,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(456, 42);
+            this.pictureBox1.Location = new System.Drawing.Point(608, 52);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 126);
+            this.pictureBox1.Size = new System.Drawing.Size(267, 155);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 55;
             this.pictureBox1.TabStop = false;
@@ -172,9 +187,10 @@
             // 
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button8.Location = new System.Drawing.Point(116, 597);
+            this.button8.Location = new System.Drawing.Point(155, 735);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(123, 43);
+            this.button8.Size = new System.Drawing.Size(164, 53);
             this.button8.TabIndex = 69;
             this.button8.Text = "Geri Dön";
             this.button8.UseVisualStyleBackColor = true;
@@ -183,19 +199,20 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(116, 51);
+            this.pictureBox5.Location = new System.Drawing.Point(155, 63);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(200, 126);
+            this.pictureBox5.Size = new System.Drawing.Size(267, 155);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 70;
             this.pictureBox5.TabStop = false;
             // 
             // RaporlamaAnaEkrani
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(75)))), ((int)(((byte)(109)))));
-            this.ClientSize = new System.Drawing.Size(1062, 676);
+            this.ClientSize = new System.Drawing.Size(1416, 832);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -209,6 +226,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "RaporlamaAnaEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RaporlamaAnaEkrani";

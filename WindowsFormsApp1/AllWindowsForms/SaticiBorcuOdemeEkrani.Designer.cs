@@ -120,6 +120,7 @@
             this.Name = "SaticiBorcuOdemeEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SaticiBorcuOdemeEkrani";
+            this.Load += new System.EventHandler(this.SaticiBorcuOdemeEkrani_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
