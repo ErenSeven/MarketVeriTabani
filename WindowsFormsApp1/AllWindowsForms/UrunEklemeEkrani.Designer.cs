@@ -41,6 +41,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -172,12 +173,25 @@
             this.textBox.TabIndex = 49;
             this.textBox.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
+            // button5
+            // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button5.Location = new System.Drawing.Point(591, 37);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(250, 73);
+            this.button5.TabIndex = 50;
+            this.button5.Text = "Ürün Ekle";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // UrunEklemeEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(75)))), ((int)(((byte)(109)))));
             this.ClientSize = new System.Drawing.Size(1062, 676);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button4);
@@ -216,5 +230,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox;
+        private System.Windows.Forms.Button button5;
     }
 }
