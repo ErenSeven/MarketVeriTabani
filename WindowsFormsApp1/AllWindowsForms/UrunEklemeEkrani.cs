@@ -102,13 +102,6 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            using(UrunDbContext context = new UrunDbContext())
-            {
-                context.Database.Create();
-                MessageBox.Show("Database oluşturuldu.");
-            }
-        }
+        
     }
 }

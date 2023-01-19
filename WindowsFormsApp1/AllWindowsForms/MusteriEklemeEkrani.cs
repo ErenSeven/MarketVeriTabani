@@ -28,5 +28,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void MusteriEklemeEkrani_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
