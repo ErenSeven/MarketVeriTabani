@@ -29,15 +29,13 @@
         private void InitializeComponent()
         {
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.txtKod = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,40 +51,11 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
-            // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(747, 402);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(234, 67);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Alışverişi Bitir";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(567, 198);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(414, 170);
-            this.dataGridView3.TabIndex = 19;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(567, 154);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(175, 24);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Sepete Eklenenler";
-            // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(744, 77);
+            this.button1.Location = new System.Drawing.Point(832, 274);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 33);
             this.button1.TabIndex = 17;
@@ -95,38 +64,56 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(634, 86);
+            this.textBox1.Location = new System.Drawing.Point(711, 283);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(79, 20);
             this.textBox1.TabIndex = 16;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(552, 86);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 24);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Adet";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(82, 86);
+            this.dataGridView1.Location = new System.Drawing.Point(39, 86);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(386, 236);
+            this.dataGridView1.Size = new System.Drawing.Size(516, 316);
             this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(82, 41);
+            this.label1.Location = new System.Drawing.Point(35, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 24);
             this.label1.TabIndex = 11;
             this.label1.Text = "Ürün Seç";
+            // 
+            // txtKod
+            // 
+            this.txtKod.Location = new System.Drawing.Point(711, 253);
+            this.txtKod.Name = "txtKod";
+            this.txtKod.Size = new System.Drawing.Size(79, 20);
+            this.txtKod.TabIndex = 23;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(584, 249);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 24);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Ürün Kodu";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(561, 283);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(126, 24);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Satış Miktarı";
             // 
             // PesinSatisEkrani
             // 
@@ -134,19 +121,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(75)))), ((int)(((byte)(109)))));
             this.ClientSize = new System.Drawing.Size(1062, 676);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtKod);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridView3);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "PesinSatisEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PesinSatisEkrani";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.Load += new System.EventHandler(this.PesinSatisEkrani_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -156,13 +142,12 @@
         #endregion
 
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtKod;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
     }
 }
