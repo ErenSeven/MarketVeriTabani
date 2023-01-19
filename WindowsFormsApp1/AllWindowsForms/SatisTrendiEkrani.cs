@@ -24,8 +24,8 @@ namespace WindowsFormsApp1.AllWindowsForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
+            RaporlamaAnaEkrani raporlamaAnaEkrani = new RaporlamaAnaEkrani();
+            raporlamaAnaEkrani.Show();
             this.Hide();
         }
     }
