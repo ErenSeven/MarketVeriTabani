@@ -23,5 +23,12 @@ namespace WindowsFormsApp1.AllWindowsForms
             raporlamaAnaEkrani.Show();
             this.Hide();
         }
+
+        private void UrunBazliKarRaporuEkrani_Load(object sender, EventArgs e)
+        {
+            // TODO: Bu kod satırı 'urunBazliKarVeritabanıDataSet.mydb' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.mydbTableAdapter.Fill(this.urunBazliKarVeritabanıDataSet.mydb);
+
+        }
     }
 }
