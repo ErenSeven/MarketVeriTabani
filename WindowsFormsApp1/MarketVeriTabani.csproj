@@ -68,6 +68,18 @@
     <Compile Include="AllWindowsForms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllWindowsForms\GirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindowsForms\GirisEkrani.Designer.cs">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllWindowsForms\Kaydol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindowsForms\Kaydol.Designer.cs">
+      <DependentUpon>Kaydol.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllWindowsForms\MusteriBazliRaporEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +109,12 @@
     </Compile>
     <Compile Include="AllWindowsForms\SatisTrendiEkrani.Designer.cs">
       <DependentUpon>SatisTrendiEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllWindowsForms\TedarikciEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWindowsForms\TedarikciEkleme.Designer.cs">
+      <DependentUpon>TedarikciEkleme.cs</DependentUpon>
     </Compile>
     <Compile Include="AllWindowsForms\UrunBazliKarGrafigiEkrani.cs">
       <SubType>Form</SubType>
@@ -192,6 +210,12 @@
     <EmbeddedResource Include="AllWindowsForms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AllWindowsForms\GirisEkrani.resx">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllWindowsForms\Kaydol.resx">
+      <DependentUpon>Kaydol.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllWindowsForms\MusteriBazliRaporEkrani.resx">
       <DependentUpon>MusteriBazliRaporEkrani.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllWindowsForms\SatisTrendiEkrani.resx">
       <DependentUpon>SatisTrendiEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllWindowsForms\TedarikciEkleme.resx">
+      <DependentUpon>TedarikciEkleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllWindowsForms\UrunBazliKarGrafigiEkrani.resx">
       <DependentUpon>UrunBazliKarGrafigiEkrani.cs</DependentUpon>
