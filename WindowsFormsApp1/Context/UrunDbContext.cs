@@ -14,7 +14,7 @@ namespace WindowsFormsApp1.Context
         public DbSet<Tedarikci> Tedarikcis { get; set; }
         public DbSet<Irsaliye> Irsaliyes { get; set; }
         public DbSet<Kullanici> Kullanicis { get; set; }
-        public DbSet<Satis> Satiss { get; set; }
+        public DbSet<Satilma> Satilmas { get; set; }
 
     }
 }
