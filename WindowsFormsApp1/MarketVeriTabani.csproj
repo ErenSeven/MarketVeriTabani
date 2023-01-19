@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,6 +13,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,7 +36,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -100,6 +110,38 @@
     <Compile Include="AllWindowsForms\UrunBazliKarRaporuEkrani.Designer.cs">
       <DependentUpon>UrunBazliKarRaporuEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="Context\Irsaliye.cs" />
+    <Compile Include="Context\Kullanici.cs" />
+    <Compile Include="Context\Musteri.cs" />
+    <Compile Include="Context\Satis.cs" />
+    <Compile Include="Context\Tedarikci.cs" />
+    <Compile Include="Context\Urun.cs" />
+    <Compile Include="Context\UrunDbContext.cs" />
+    <Compile Include="Migrations\202301191436234_InitialCreate.cs" />
+    <Compile Include="Migrations\202301191436234_InitialCreate.designer.cs">
+      <DependentUpon>202301191436234_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301191810194_SatisLong.cs" />
+    <Compile Include="Migrations\202301191810194_SatisLong.designer.cs">
+      <DependentUpon>202301191810194_SatisLong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301191816293_eren.cs" />
+    <Compile Include="Migrations\202301191816293_eren.designer.cs">
+      <DependentUpon>202301191816293_eren.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301191819150_satisDecimal.cs" />
+    <Compile Include="Migrations\202301191819150_satisDecimal.designer.cs">
+      <DependentUpon>202301191819150_satisDecimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301191820532_MusteriTablosuEkle.cs" />
+    <Compile Include="Migrations\202301191820532_MusteriTablosuEkle.designer.cs">
+      <DependentUpon>202301191820532_MusteriTablosuEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301191824414_MusteriTablosuEkle2.cs" />
+    <Compile Include="Migrations\202301191824414_MusteriTablosuEkle2.designer.cs">
+      <DependentUpon>202301191824414_MusteriTablosuEkle2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AllWindowsForms\RaporlamaAnaEkrani.cs">
@@ -171,6 +213,24 @@
     <EmbeddedResource Include="AllWindowsForms\UrunBazliKarRaporuEkrani.resx">
       <DependentUpon>UrunBazliKarRaporuEkrani.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301191436234_InitialCreate.resx">
+      <DependentUpon>202301191436234_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301191810194_SatisLong.resx">
+      <DependentUpon>202301191810194_SatisLong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301191816293_eren.resx">
+      <DependentUpon>202301191816293_eren.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301191819150_satisDecimal.resx">
+      <DependentUpon>202301191819150_satisDecimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301191820532_MusteriTablosuEkle.resx">
+      <DependentUpon>202301191820532_MusteriTablosuEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301191824414_MusteriTablosuEkle2.resx">
+      <DependentUpon>202301191824414_MusteriTablosuEkle2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -201,6 +261,7 @@
     <EmbeddedResource Include="AllWindowsForms\UrunEklemeEkrani.resx">
       <DependentUpon>UrunEklemeEkrani.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -215,4 +276,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
 </Project>
