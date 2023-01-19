@@ -30,5 +30,12 @@ namespace WindowsFormsApp1.AllWindowsForms
             dbContext.SaveChanges();
             MessageBox.Show("Kullanıcı kaydoldu.");
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            GirisEkrani girisEkrani = new GirisEkrani();
+            girisEkrani.Show();
+            this.Hide();
+        }
     }
 }

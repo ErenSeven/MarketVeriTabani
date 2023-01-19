@@ -33,6 +33,7 @@
             this.txtAd = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtSifre
@@ -81,18 +82,32 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button3.Location = new System.Drawing.Point(55, 35);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(123, 43);
+            this.button3.TabIndex = 56;
+            this.button3.Text = "Geri Dön";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Kaydol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(75)))), ((int)(((byte)(109)))));
             this.ClientSize = new System.Drawing.Size(1062, 676);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.txtSifre);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtAd);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Name = "Kaydol";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kaydol";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -106,5 +121,6 @@
         private System.Windows.Forms.TextBox txtAd;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
     }
 }

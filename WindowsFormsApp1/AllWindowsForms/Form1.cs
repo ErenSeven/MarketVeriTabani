@@ -59,5 +59,12 @@ namespace WindowsFormsApp1
             musteriBorcuOdemeEkrani.Show();
             this.Hide();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            TedarikciEkleme tedarikciEkleme = new TedarikciEkleme();
+            tedarikciEkleme.Show();
+            this.Hide();
+        }
     }
 }

@@ -51,6 +51,22 @@ namespace WindowsFormsApp1.AllWindowsForms
             dataGridView1.DataSource = dbContext.Tedarikcis.ToList();
         }
 
-       
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int ID = int.Parse(dataGridView1.CurrentRow.Cells[1].Value.ToString());
+            var tbl = dbContext.Tedarikcis.FirstOrDefault(x => x.TedarikciID == ID);
+            dbContext.Tedarikcis.Remove(tbl);
+            dbContext.SaveChanges();
+            MessageBox.Show("Kayit silindi");
+            Temizle();
+            dataGridView1.DataSource = dbContext.Tedarikcis.ToList();
+        }
     }
 }

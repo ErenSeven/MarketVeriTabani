@@ -48,6 +48,7 @@
             this.button3.TabIndex = 53;
             this.button3.Text = "Geri Dön";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label6
             // 
@@ -108,6 +109,7 @@
             this.button2.TabIndex = 54;
             this.button2.Text = "Tedarikci  Sil";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // TedarikciEkleme
             // 
@@ -123,6 +125,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Name = "TedarikciEkleme";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TedarikciEkleme";
             this.Load += new System.EventHandler(this.TedarikciEkleme_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

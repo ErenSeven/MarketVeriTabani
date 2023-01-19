@@ -20,6 +20,21 @@ namespace WindowsFormsApp1.AllWindowsForms
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            Kaydol kaydol = new Kaydol();
+            kaydol.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
             using (UrunDbContext context = new UrunDbContext())
             {
                 context.Database.Create();
