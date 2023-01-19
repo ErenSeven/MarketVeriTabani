@@ -31,11 +31,12 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtAd = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,13 +71,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(561, 530);
             this.dataGridView1.TabIndex = 43;
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(928, 322);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(79, 20);
-            this.textBox5.TabIndex = 42;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -87,12 +81,12 @@
             this.label5.TabIndex = 41;
             this.label5.Text = "Müşteri Soyadı";
             // 
-            // textBox3
+            // txtAd
             // 
-            this.textBox3.Location = new System.Drawing.Point(928, 287);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(79, 20);
-            this.textBox3.TabIndex = 38;
+            this.txtAd.Location = new System.Drawing.Point(928, 287);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(79, 20);
+            this.txtAd.TabIndex = 38;
             // 
             // label2
             // 
@@ -116,18 +110,39 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button4.Location = new System.Drawing.Point(821, 448);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(186, 41);
+            this.button4.TabIndex = 47;
+            this.button4.Text = "Müşteri Sil";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(928, 322);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(79, 20);
+            this.textBox1.TabIndex = 48;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // MusteriEklemeEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(75)))), ((int)(((byte)(109)))));
             this.ClientSize = new System.Drawing.Size(1062, 676);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtAd);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Name = "MusteriEklemeEkrani";
@@ -145,10 +160,11 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtAd;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

@@ -14,7 +14,7 @@ namespace WindowsFormsApp1.Context
         public int BarkodNo { get; set; }
         public int StokMiktar { get; set; }
         public decimal SatisFiyati { get; set; }
-
+        public int Kar { get; set; }
 
     }
 }
