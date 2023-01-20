@@ -45,6 +45,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button2 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -113,7 +117,7 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(662, 267);
+            this.button1.Location = new System.Drawing.Point(792, 267);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 33);
             this.button1.TabIndex = 6;
@@ -125,7 +129,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(469, 276);
+            this.label4.Location = new System.Drawing.Point(599, 276);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(175, 24);
             this.label4.TabIndex = 7;
@@ -208,7 +212,7 @@
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(851, 267);
+            this.button2.Location = new System.Drawing.Point(635, 602);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(167, 33);
             this.button2.TabIndex = 17;
@@ -216,12 +220,50 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(553, 528);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(125, 24);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Kullanıcı Adı";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(723, 532);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(79, 20);
+            this.textBox2.TabIndex = 19;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(625, 562);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(53, 24);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Sifre";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(723, 566);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(79, 20);
+            this.textBox1.TabIndex = 21;
+            // 
             // CariSatisEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(75)))), ((int)(((byte)(109)))));
             this.ClientSize = new System.Drawing.Size(1062, 676);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label7);
@@ -270,5 +312,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

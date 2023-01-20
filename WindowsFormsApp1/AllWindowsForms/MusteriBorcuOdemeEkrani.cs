@@ -50,20 +50,36 @@ namespace WindowsFormsApp1.AllWindowsForms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int SatID = int.Parse(dataGridView2.CurrentRow.Cells[0].Value.ToString());
-            int UrnID = int.Parse(dataGridView2.CurrentRow.Cells[1].Value.ToString());
+            int ID = int.Parse(dataGridView2.CurrentRow.Cells[0].Value.ToString());
+            var tbl = dbContext.Satis.FirstOrDefault(x => x.SatisID == ID);
 
-            int MusID = int.Parse(dataGridView1.CurrentRow.Cells[2].Value.ToString());
-            var Sat = dbContext.Satis.FirstOrDefault(x => x.SatisID == SatID);
-            var Urn = dbContext.Uruns.FirstOrDefault(x => x.UrunID == UrnID);
-            var Mus = dbContext.Musteris.FirstOrDefault(x => x.MusteriID == MusID);
-            Mus.MusteriBorc -= Urn.SatisFiyati * Sat.SatisMiktar;
+            int ID3 = int.Parse(dataGridView2.CurrentRow.Cells[1].Value.ToString());
+            var tbl2 = dbContext.Uruns.FirstOrDefault(x => x.BarkodNo == ID3);
+            int ID2 = int.Parse(dataGridView2.CurrentRow.Cells[3].Value.ToString());
+            var tbl3 = dbContext.Musteris.FirstOrDefault(x => x.MusteriID == ID2);
 
-            dbContext.Satis.Remove(Sat);
-            dbContext.SaveChanges();
-            MessageBox.Show("Satın alma silindi");
-            dataGridView1.DataSource = dbContext.Musteris.ToList();
-            dataGridView2.DataSource = dbContext.Satis.ToList();
+            string kullaniciAdi = textBox3.Text;
+            var Ad = dbContext.Kullanicis.FirstOrDefault(x => x.Ad == kullaniciAdi);
+            string kullanicisifre = textBox2.Text;
+            var Sifre = dbContext.Kullanicis.FirstOrDefault(x => x.Sifre == kullanicisifre);
+            if (Ad == null || Sifre == null)
+            {
+                MessageBox.Show("Lütfen geçerli bir kullanıcı girin");
+
+            }
+            else
+            {
+
+
+                tbl3.MusteriBorc -=  tbl.SatisMiktar*tbl2.SatisFiyati;
+                tbl3.GuncelBorc = tbl3.MusteriBorc - tbl3.MusteriOdeme;
+
+                dbContext.Satis.Remove(tbl);
+                dbContext.SaveChanges();
+                MessageBox.Show("Sepetten silindi");
+                dataGridView1.DataSource = dbContext.Uruns.ToList();
+                dataGridView2.DataSource = dbContext.Musteris.ToList();
+            }
         }
     }
 }
