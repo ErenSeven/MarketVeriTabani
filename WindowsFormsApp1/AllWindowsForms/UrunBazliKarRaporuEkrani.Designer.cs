@@ -1,4 +1,7 @@
-﻿namespace WindowsFormsApp1.AllWindowsForms
+﻿using System;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp1.AllWindowsForms
 {
     partial class UrunBazliKarRaporuEkrani
     {
@@ -79,6 +82,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(748, 652);
             this.dataGridView1.TabIndex = 59;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 
@@ -107,10 +111,16 @@
             this.Name = "UrunBazliKarRaporuEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UrunBazliKarRaporuEkrani";
+            this.Load += new System.EventHandler(this.UrunBazliKarRaporuEkrani_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
