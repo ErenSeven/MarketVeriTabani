@@ -77,16 +77,45 @@ namespace WindowsFormsApp1
             int ID2 = int.Parse(txtMus.Text);
             var tbl3 = dbContext.Musteris.FirstOrDefault(x => x.MusteriID == ID2);
             tbl3.MusteriBorc += ((decimal.Parse(txtSatis.Text))*(tbl2.SatisFiyati));
+            tbl3.GuncelBorc = tbl3.MusteriBorc - tbl3.MusteriOdeme;
             dbContext.SaveChanges();
 
             dataGridView1.DataSource = dbContext.Uruns.ToList();
             dataGridView2.DataSource = dbContext.Musteris.ToList();
+            dataGridView3.DataSource = dbContext.Satis.ToList();
 
             if (tbl2.StokMiktar <= 5)
             {
                 MessageBox.Show("Stok 5'in altında.");
             }
 
+        }
+
+        private void dataGridView3_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int ID = int.Parse(dataGridView3.CurrentRow.Cells[0].Value.ToString());
+            var tbl = dbContext.Satis.FirstOrDefault(x => x.SatisID == ID);
+
+            int ID3 = int.Parse(txtKod.Text);
+            var tbl2 = dbContext.Uruns.FirstOrDefault(x => x.BarkodNo == ID3);
+            tbl2.StokMiktar += int.Parse(txtSatis.Text);
+
+            int ID2 = int.Parse(txtMus.Text);
+            var tbl3 = dbContext.Musteris.FirstOrDefault(x => x.MusteriID == ID2);
+            tbl3.MusteriBorc -= ((decimal.Parse(txtSatis.Text)) * (tbl2.SatisFiyati));
+            tbl3.GuncelBorc = tbl3.MusteriBorc - tbl3.MusteriOdeme;
+
+            dbContext.Satis.Remove(tbl);
+            dbContext.SaveChanges();
+            MessageBox.Show("Sepetten silindi");
+            dataGridView1.DataSource = dbContext.Uruns.ToList();
+            dataGridView2.DataSource = dbContext.Musteris.ToList();
+            dataGridView3.DataSource = dbContext.Satis.ToList();
         }
     }
 }

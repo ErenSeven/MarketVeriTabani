@@ -61,7 +61,11 @@ namespace WindowsFormsApp1
             var tbl2 = dbContext.Uruns.FirstOrDefault(x => x.BarkodNo == ID);
             tbl2.StokMiktar += int.Parse(txtMiktar.Text);
             dbContext.SaveChanges();
-
+            
+            int ID4 = int.Parse(txtKod.Text);
+            var tbl5 = dbContext.Uruns.FirstOrDefault(x => x.BarkodNo == ID4);
+            tbl5.Kar = tbl5.SatisFiyati - tbl.GirdiBirimFiyat;
+            dbContext.SaveChanges();
 
             int ID2 = int.Parse(textNo.Text);
             var tbl3 = dbContext.Tedarikcis.FirstOrDefault(x => x.TedarikciID == ID2);

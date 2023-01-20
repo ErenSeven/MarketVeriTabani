@@ -14,5 +14,6 @@ namespace WindowsFormsApp1.Context
         public int MusteriID { get; set; }
         public decimal MusteriBorc { get; set; }
         public decimal MusteriOdeme { get; set; }
+        public decimal GuncelBorc { get; set; }
     }
 }
