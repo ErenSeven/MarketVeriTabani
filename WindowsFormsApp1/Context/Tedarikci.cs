@@ -10,5 +10,6 @@ namespace WindowsFormsApp1.Context
     {
         public string TedarikciAd { get; set; }
         public int TedarikciID { get; set; }
+        public decimal Alacak { get; set; }
     }
 }

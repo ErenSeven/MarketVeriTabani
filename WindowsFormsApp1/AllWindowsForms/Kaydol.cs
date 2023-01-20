@@ -26,6 +26,7 @@ namespace WindowsFormsApp1.AllWindowsForms
             var tbl = new Kullanici();
             tbl.Ad = txtAd.Text;
             tbl.Sifre = txtSifre.Text;
+            tbl.Borc = 0;
             dbContext.Kullanicis.Add(tbl);
             dbContext.SaveChanges();
             MessageBox.Show("Kullanıcı kaydoldu.");

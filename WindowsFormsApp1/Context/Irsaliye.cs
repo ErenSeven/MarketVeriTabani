@@ -13,5 +13,6 @@ namespace WindowsFormsApp1.Context
         public int TedarikciNo { get; set; }
         public int UrunKod { get; set; }
         public int Miktar { get; set; }
+        public int KullaniciKod { get; set; }
     }
 }

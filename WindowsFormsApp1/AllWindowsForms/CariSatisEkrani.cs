@@ -66,7 +66,27 @@ namespace WindowsFormsApp1
             tbl.SatisTarih = dateTimePicker1.Value;
             dbContext.Satis.Add(tbl);
             dbContext.SaveChanges();
-            MessageBox.Show("eklendi");
+            MessageBox.Show("sepete eklendi");
+
+
+            int ID = int.Parse(txtKod.Text);
+            var tbl2 = dbContext.Uruns.FirstOrDefault(x => x.BarkodNo == ID);
+            tbl2.StokMiktar -= int.Parse(txtSatis.Text);
+            dbContext.SaveChanges();
+
+            int ID2 = int.Parse(txtMus.Text);
+            var tbl3 = dbContext.Musteris.FirstOrDefault(x => x.MusteriID == ID2);
+            tbl3.MusteriBorc += ((decimal.Parse(txtSatis.Text))*(tbl2.SatisFiyati));
+            dbContext.SaveChanges();
+
+            dataGridView1.DataSource = dbContext.Uruns.ToList();
+            dataGridView2.DataSource = dbContext.Musteris.ToList();
+
+            if (tbl2.StokMiktar <= 5)
+            {
+                MessageBox.Show("Stok 5'in altında.");
+            }
+
         }
     }
 }

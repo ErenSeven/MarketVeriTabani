@@ -30,7 +30,7 @@
         {
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSatis = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.txtKod = new System.Windows.Forms.TextBox();
@@ -61,13 +61,14 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "Sepete Ekle";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // txtSatis
             // 
-            this.textBox1.Location = new System.Drawing.Point(711, 283);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(79, 20);
-            this.textBox1.TabIndex = 16;
+            this.txtSatis.Location = new System.Drawing.Point(711, 283);
+            this.txtSatis.Name = "txtSatis";
+            this.txtSatis.Size = new System.Drawing.Size(79, 20);
+            this.txtSatis.TabIndex = 16;
             // 
             // dataGridView1
             // 
@@ -126,7 +127,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSatis);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "PesinSatisEkrani";
@@ -143,7 +144,7 @@
 
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSatis;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtKod;

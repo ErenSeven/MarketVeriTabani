@@ -36,5 +36,22 @@ namespace WindowsFormsApp1
         {
             txtKod.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            int ID = int.Parse(txtKod.Text);
+            var tbl2 = dbContext.Uruns.FirstOrDefault(x => x.BarkodNo == ID);
+            tbl2.StokMiktar -= int.Parse(txtSatis.Text);
+            dbContext.SaveChanges();
+
+
+            if (tbl2.StokMiktar <= 5)
+            {
+                MessageBox.Show("Stok 5'in altında.");
+            }
+
+            dataGridView1.DataSource = dbContext.Uruns.ToList();
+        }
     }
 }

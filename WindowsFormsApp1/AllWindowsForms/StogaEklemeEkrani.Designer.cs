@@ -42,15 +42,20 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(804, 362);
+            this.button1.Location = new System.Drawing.Point(826, 558);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(186, 41);
             this.button1.TabIndex = 20;
@@ -60,7 +65,7 @@
             // 
             // txtMiktar
             // 
-            this.txtMiktar.Location = new System.Drawing.Point(911, 315);
+            this.txtMiktar.Location = new System.Drawing.Point(933, 511);
             this.txtMiktar.Name = "txtMiktar";
             this.txtMiktar.Size = new System.Drawing.Size(79, 20);
             this.txtMiktar.TabIndex = 19;
@@ -69,7 +74,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(818, 315);
+            this.label3.Location = new System.Drawing.Point(840, 511);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 24);
             this.label3.TabIndex = 18;
@@ -77,7 +82,7 @@
             // 
             // txtKod
             // 
-            this.txtKod.Location = new System.Drawing.Point(911, 282);
+            this.txtKod.Location = new System.Drawing.Point(933, 478);
             this.txtKod.Name = "txtKod";
             this.txtKod.Size = new System.Drawing.Size(79, 20);
             this.txtKod.TabIndex = 22;
@@ -86,7 +91,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(783, 282);
+            this.label1.Location = new System.Drawing.Point(805, 478);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 24);
             this.label1.TabIndex = 21;
@@ -94,7 +99,7 @@
             // 
             // txtBirim
             // 
-            this.txtBirim.Location = new System.Drawing.Point(911, 211);
+            this.txtBirim.Location = new System.Drawing.Point(933, 407);
             this.txtBirim.Name = "txtBirim";
             this.txtBirim.Size = new System.Drawing.Size(79, 20);
             this.txtBirim.TabIndex = 26;
@@ -103,7 +108,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(721, 209);
+            this.label4.Location = new System.Drawing.Point(743, 405);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(165, 24);
             this.label4.TabIndex = 25;
@@ -111,7 +116,7 @@
             // 
             // textNo
             // 
-            this.textNo.Location = new System.Drawing.Point(911, 247);
+            this.textNo.Location = new System.Drawing.Point(933, 443);
             this.textNo.Name = "textNo";
             this.textNo.Size = new System.Drawing.Size(79, 20);
             this.textNo.TabIndex = 28;
@@ -120,7 +125,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(700, 247);
+            this.label5.Location = new System.Drawing.Point(722, 443);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(186, 24);
             this.label5.TabIndex = 27;
@@ -178,12 +183,52 @@
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             this.dataGridView2.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView2_CellMouseDoubleClick);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(763, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 24);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Kullanıcı";
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(767, 118);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(245, 219);
+            this.dataGridView3.TabIndex = 34;
+            this.dataGridView3.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView3_CellMouseDoubleClick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(933, 371);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(79, 20);
+            this.textBox1.TabIndex = 37;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(793, 371);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(115, 24);
+            this.label8.TabIndex = 36;
+            this.label8.Text = "Kullanici ID";
+            // 
             // StogaEklemeEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(75)))), ((int)(((byte)(109)))));
             this.ClientSize = new System.Drawing.Size(1062, 676);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button3);
@@ -204,6 +249,7 @@
             this.Load += new System.EventHandler(this.StogaEklemeEkrani_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,5 +271,9 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label8;
     }
 }
