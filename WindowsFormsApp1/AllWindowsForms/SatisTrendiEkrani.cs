@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,7 +25,7 @@ namespace WindowsFormsApp1.AllWindowsForms
             var sorgu = from d1 in dbContext.Uruns
                         select new
                         {
-                            d1.UrunID,
+                            d1.BarkodNo,
                             d1.UrunAdı,
                             d1.ToplamSatis
                         };
@@ -34,6 +35,20 @@ namespace WindowsFormsApp1.AllWindowsForms
             var UrunsInDescOrder = orderByResult.OrderByDescending(s => s.ToplamSatis);
 
             dataGridView1.DataSource = UrunsInDescOrder.ToList();
+
+            var grafik = from d1 in dbContext.Satis
+                         where d1.UrunKodu == 1
+                         select new
+                         {
+                             d1.SatisTarih,
+                             d1.SatisMiktar
+                         };
+
+            chart1.Series[0].XValueMember = "SatisTarih";
+            chart1.Series[0].YValueMembers = "SatisMiktar";
+
+            chart1.DataSource = grafik.ToList();
+            chart1.DataBind();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,8 +61,27 @@ namespace WindowsFormsApp1.AllWindowsForms
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int ID = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+
+
+            var grafik = from d1 in dbContext.Satis
+                        where d1.UrunKodu == ID
+                        select new
+                        {
+                            d1.SatisTarih,
+                            d1.SatisMiktar                            
+                        };
+
+            chart1.Series[0].XValueMember = "SatisTarih";
+            chart1.Series[0].YValueMembers = "SatisMiktar";
+
+            chart1.DataSource = grafik.ToList();
+            chart1.DataBind();
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
             
-        
         }
     }
 }

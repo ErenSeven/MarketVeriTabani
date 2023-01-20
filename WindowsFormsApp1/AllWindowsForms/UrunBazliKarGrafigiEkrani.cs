@@ -41,5 +41,14 @@ namespace WindowsFormsApp1.AllWindowsForms
             chart1.DataSource = dbContext.Uruns.ToList();
             chart1.DataBind();
         }
+
+        private void UrunBazliKarGrafigiEkrani_Load(object sender, EventArgs e)
+        {
+            chart1.Series[0].XValueMember = "UrunAdı";
+            chart1.Series[0].YValueMembers = "kar";
+
+            chart1.DataSource = dbContext.Uruns.ToList();
+            chart1.DataBind();
+        }
     }
 }

@@ -95,6 +95,7 @@
             this.Name = "UrunBazliKarGrafigiEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UrunBazliKarGrafigiEkrani";
+            this.Load += new System.EventHandler(this.UrunBazliKarGrafigiEkrani_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
