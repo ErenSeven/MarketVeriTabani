@@ -75,6 +75,7 @@ namespace WindowsFormsApp1.AllWindowsForms
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(145, 167);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
@@ -120,7 +121,7 @@ namespace WindowsFormsApp1.AllWindowsForms
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            throw new NotImplementedException();
+
         }
 
         #endregion

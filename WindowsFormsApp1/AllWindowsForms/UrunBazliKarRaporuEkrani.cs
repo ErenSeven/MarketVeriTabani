@@ -45,13 +45,13 @@ namespace WindowsFormsApp1.AllWindowsForms
                             x.Kar
                         };
 
-                
-            dataGridView1.DataSource = liste.ToList();
-            // dataGridView1.Sort(dataGridView1.Columns["Kar"], ListSortDirection.Ascending);
-            //dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Descending);
-            // dataGridView1.Columns[1].HeaderCell.SortGlyphDirection = SortOrder.Ascending;
-            // dataGridView1.Sort(dataGridView1.Columns["Kar"],ListSortDirection.Descending);
+            var orderByResult = from s in liste
+                                orderby s.Kar
+                                select s;
 
+            var UrunsInDescOrder = orderByResult.OrderByDescending(s => s.Kar);
+
+            dataGridView1.DataSource = UrunsInDescOrder.ToList();            
         }
     }
 }
