@@ -36,15 +36,8 @@ namespace WindowsFormsApp1.AllWindowsForms
         private void chart1_Click(object sender, EventArgs e)
         {
             chart1.Series[0].XValueMember = "UrunAdı";
-            chart1.Series[0].YValueMembers = "StokMiktar";
-
-            //chart1.Series[1].XValueMember = "Ürün Adı";
-            //chart1.Series[1].YValueMembers = "Ürün Adı";
-
-            //chart1.Series[2].XValueMember = "Ürün Adı";
-            //chart1.Series[2].YValueMembers = "Ürün Adı";
-
-            //chart1.DataSource = urunBazliKarVeritabanıDataSet1.mydb;
+            chart1.Series[0].YValueMembers = "kar";
+                        
             chart1.DataSource = dbContext.Uruns.ToList();
             chart1.DataBind();
         }
