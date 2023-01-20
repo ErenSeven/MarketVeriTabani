@@ -30,5 +30,10 @@ namespace WindowsFormsApp1
             pesinSatisEkrani.Show();
             this.Hide();
         }
+
+        private void SatisEkrani_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

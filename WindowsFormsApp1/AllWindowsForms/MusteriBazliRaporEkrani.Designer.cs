@@ -80,6 +80,7 @@
             this.Name = "MusteriBazliRaporEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MusteriBazliRaporEkrani";
+            this.Load += new System.EventHandler(this.MusteriBazliRaporEkrani_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

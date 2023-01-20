@@ -23,5 +23,14 @@ namespace WindowsFormsApp1.AllWindowsForms
             raporlamaAnaEkrani.Show();
             this.Hide();
         }
+
+        private void MusteriBazliRaporEkrani_Load(object sender, EventArgs e)
+        {
+            // ürün adı toplam satış miktarı toplam tutar.
+            // Müşteri seç
+            // Müşteri, Uruns ve Satis tablosunu join le
+            // müşteri adı toplam satış miktarı toplam tutar.
+            // müşteri adı arama yapılıcak.
+        }
     }
 }
