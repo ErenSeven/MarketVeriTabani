@@ -1,4 +1,7 @@
-﻿namespace WindowsFormsApp1.AllWindowsForms
+﻿using System;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp1.AllWindowsForms
 {
     partial class UrunBazliKarRaporuEkrani
     {
@@ -72,6 +75,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(145, 167);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
@@ -79,6 +83,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(748, 652);
             this.dataGridView1.TabIndex = 59;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 
@@ -107,9 +112,15 @@
             this.Name = "UrunBazliKarRaporuEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UrunBazliKarRaporuEkrani";
+            this.Load += new System.EventHandler(this.UrunBazliKarRaporuEkrani_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
 
