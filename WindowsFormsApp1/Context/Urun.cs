@@ -12,6 +12,7 @@ namespace WindowsFormsApp1.Context
         public int UrunID { get; set; }
         public string UrunAdı { get; set; }
         public int BarkodNo { get; set; }
+        public int ToplamSatis { get; set; }
         public int StokMiktar { get; set; }
         public decimal SatisFiyati { get; set; }
         public decimal Kar { get; set; }

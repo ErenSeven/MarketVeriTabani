@@ -73,6 +73,7 @@ namespace WindowsFormsApp1
             int ID = int.Parse(txtKod.Text);
             var tbl2 = dbContext.Uruns.FirstOrDefault(x => x.BarkodNo == ID);
             tbl2.StokMiktar -= int.Parse(txtSatis.Text);
+            tbl2.ToplamSatis += int.Parse(txtSatis.Text);
             dbContext.SaveChanges();
 
             int ID2 = int.Parse(txtMus.Text);
